@@ -85,11 +85,44 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl:64 \
+    android.hardware.bluetooth@1.0-service \
+    libbt-vendor:64 \
     audio.a2dp.default
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.5-service_64.exynos9810 \
+    libsensorndkbridge \
     Snap
+
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl:64 \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.2-service \
+    android.hardware.graphics.mapper@2.0-impl
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.2-service.clearkey
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-service
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl:64 \
+    android.hardware.health@2.0-service
+
+# HIDL
+PRODUCT_PACKAGES += \
+   libhidltransport \
+   libhidltransport.vendor \
+   libhwbinder \
+   libhwbinder.vendor
 
 # Net
 PRODUCT_PACKAGES += \
