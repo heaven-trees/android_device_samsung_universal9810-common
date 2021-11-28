@@ -53,6 +53,20 @@ PRODUCT_PACKAGES += \
     init.recovery.samsungexynos9810.rc
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@5.0-impl:32 \
+    android.hardware.audio@5.0-impl:32 \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio@1.0-impl:32 \
+    android.hardware.soundtrigger@2.0-impl:32 \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudioroute \
+    libtinyalsa \
+    libtinycompress
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
