@@ -70,6 +70,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9810
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 57671680
@@ -129,7 +130,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 VENDOR_SECURITY_PATCH := 2021-11-01
 
 # SELinux
-include device/custom/sepolicy/exynos/sepolicy.mk
-include device/samsung_slsi/sepolicy/sepolicy.mk
+# include device/custom/sepolicy/exynos/sepolicy.mk
+# include device/samsung_slsi/sepolicy/sepolicy.mk
 
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+# BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
