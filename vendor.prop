@@ -7,6 +7,9 @@ af.fast_track_multiplier=1
 # Charger
 
 
+# API
+ro.product.first_api_level=29
+
 # Dalvik
 dalvik.vm.lockprof.threshold=500
 
