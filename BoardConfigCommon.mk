@@ -20,7 +20,7 @@ COMMON_PATH := device/samsung/universal9810-common
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # Inherit proprietary vendor configuration
-include vendor/samsung/exynos9820-common/BoardConfigVendor.mk
+include vendor/samsung/universal9810-common/BoardConfigVendor.mk
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
