@@ -144,15 +144,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/configs/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/libnfc-sec-vendor.conf
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-service.samsung
+
 # Lights
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hidl/lights/vendor.samsung.hardware.light@3.0-service:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/bin/hw/vendor.samsung.hardware.light@3.0-service \
-    $(LOCAL_PATH)/hidl/lights/vendor.samsung.hardware.light@3.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/init/vendor.samsung.hardware.light@3.0-service.rc
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.samsung
 
 # Vibrator
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hidl/vibrator/vendor.samsung.hardware.vibrator@2.1-service:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/bin/hw/vendor.samsung.hardware.vibrator@2.1-service \
-    $(LOCAL_PATH)/hidl/vibrator/vendor.samsung.hardware.vibrator@2.1-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/init/vendor.samsung.hardware.vibrator@2.1-service.rc
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.3-service.samsung
+
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 # Sensors
 PRODUCT_COPY_FILES += \
