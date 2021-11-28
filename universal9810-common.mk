@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.0-impl:64 \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor:64 \
@@ -130,6 +131,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
@@ -212,6 +214,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.5.vendor \
     android.hardware.wifi@1.0-service \
     hostapd \
     wpa_supplicant \
