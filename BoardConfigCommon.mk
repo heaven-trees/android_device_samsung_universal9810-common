@@ -19,6 +19,9 @@ COMMON_PATH := device/samsung/universal9810-common
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+# Inherit proprietary vendor configuration
+include vendor/samsung/exynos9820-common/BoardConfigVendor.mk
+
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -76,6 +79,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Ramdisk
@@ -122,6 +126,3 @@ VENDOR_SECURITY_PATCH := 2021-11-01
 
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-
-# Inherit from the proprietary version
--include vendor/samsung/universal9810-common/BoardConfigVendor.mk
