@@ -42,12 +42,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vr.high_performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.vr.high_performance.xml \
     frameworks/native/data/etc/android.software.controls.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.controls.xml
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    fstab.samsungexynos9810 \
-    init.samsung.rc \
-    init.usb_accessory.rc
-
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.samsungexynos9810.rc
