@@ -23,8 +23,7 @@ include $(COMMON_PATH)/AndroidBoard.mk
 
 include $(CLEAR_VARS)
 
-//TODO: add more libs
-EGL_LIBS := libGLES_mali.so hw/vulkan.exynos9810.so
+EGL_LIBS := libGLES_mali.so libOpenCL.so libOpenCL.so.1 libOpenCL.so.1.1 hw/vulkan.exynos9810.so
 
 EGL_32_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/lib/,$(EGL_LIBS))
 $(EGL_32_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
