@@ -130,8 +130,12 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-service_64.exynos9810 \
-    libsensorndkbridge \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    camera.device@3.3-impl \
+    camera.device@3.4-impl \
+    camera.device@3.5-impl \
+    camera.exynos5 \
     Snap
 
 # Display
