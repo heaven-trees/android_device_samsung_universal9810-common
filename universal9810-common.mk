@@ -232,6 +232,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.1-service.typec
+
 # S-Pen
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/samsung-sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
