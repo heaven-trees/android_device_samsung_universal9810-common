@@ -164,6 +164,11 @@ PRODUCT_PACKAGES += \
     libstdc++.so \
     libgui_vendor
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0.vendor
