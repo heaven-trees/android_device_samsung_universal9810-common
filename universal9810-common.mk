@@ -163,13 +163,18 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     libstdc++.so
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.0.vendor
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.2-service.clearkey \
+    android.hardware.drm@1.2.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
