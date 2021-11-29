@@ -19,6 +19,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Screen density
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := xlarge
