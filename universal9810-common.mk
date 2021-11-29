@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     libstdc++.so
 
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey
@@ -179,6 +183,10 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+   libion \
+   libsecion \
+   android.hidl.base@1.0 \
+   android.hidl.base@1.0.vendor \
    libhidltransport \
    libhidltransport.vendor \
    libhwbinder \
