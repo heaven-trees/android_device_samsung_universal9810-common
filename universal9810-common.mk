@@ -194,14 +194,14 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-   libion \
-   libsecion \
-   android.hidl.base@1.0 \
-   android.hidl.base@1.0.vendor \
-   libhidltransport \
-   libhidltransport.vendor \
-   libhwbinder \
-   libhwbinder.vendor
+    libion \
+    libsecion \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # init
 PRODUCT_COPY_FILES += \
