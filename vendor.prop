@@ -4,14 +4,28 @@ aaudio.mmap_exclusive_policy=2
 aaudio.hw_burst_min_usec=2000
 af.fast_track_multiplier=1
 
-# Charger
+# Dalvik
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
 
+# Board
+ro.board.platform=universal9810
+ro.product.vendor.brand=samsung
+ro.product.vendor.manufacturer=samsung
 
 # API
 ro.product.first_api_level=29
 
 # Dalvik
 dalvik.vm.lockprof.threshold=500
+
+# GPU
+ro.hardware.egl=mali
+ro.zygote.disable_gl_preload=true
 
 # SurfaceFlinger
 ro.surface_flinger.has_wide_color_display=true
