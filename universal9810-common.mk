@@ -201,7 +201,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libunwindstack.vendor
 
 # init
 PRODUCT_COPY_FILES += \
