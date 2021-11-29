@@ -260,6 +260,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl:64
 
+# Bridge
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
