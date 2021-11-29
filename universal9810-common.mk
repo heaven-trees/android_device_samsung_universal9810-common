@@ -101,6 +101,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@5.0-impl:32 \
     android.hardware.audio.effect@5.0-impl:32 \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth.audio@2.1-impl:32 \
     android.hardware.bluetooth.audio@1.0-impl:32 \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.soundtrigger@2.3-impl:32 \
