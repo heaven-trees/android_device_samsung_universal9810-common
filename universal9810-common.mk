@@ -299,6 +299,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
+# TinyXML
+PRODUCT_PACKAGES += \
+    libtinyxml
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
