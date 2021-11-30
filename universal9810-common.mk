@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
 
 # APEX
  PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sphal/ld.config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/swcodec/ld.config.txt
+    $(LOCAL_PATH)/configs/swcodec/ld.config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/swcodec/ld.config.txt
 
 # Audio
 PRODUCT_PACKAGES += \
