@@ -193,8 +193,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.samsungexynos9810 \
-    ueventd.qcom.rc \
+    fstab.samsungexynos9810
 
 # Seccomp
 PRODUCT_COPY_FILES += \
