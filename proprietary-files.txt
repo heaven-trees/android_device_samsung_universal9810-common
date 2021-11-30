@@ -366,7 +366,6 @@ vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml
 vendor/lib/hw/vendor.samsung.hardware.snap@1.1-impl.so
-vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libDLInterface.camera.samsung.so
 vendor/lib/libFacePreProcessing.camera.samsung.so
 vendor/lib/libHprFace_GAE_api.camera.samsung.so
@@ -391,7 +390,6 @@ vendor/lib/vendor.samsung.hardware.snap@1.1.so
 vendor/lib/vendor.samsung.hardware.tlc.ucm@2.0-impl.so
 vendor/lib/vendor.samsung.hardware.tlc.ucm@2.0.so
 vendor/lib64/hw/vendor.samsung.hardware.snap@1.1-impl.so
-vendor/lib64/libBeauty_v4.camera.samsung.so
 vendor/lib64/libDLInterface.camera.samsung.so
 vendor/lib64/libFacePreProcessing.camera.samsung.so
 vendor/lib64/libhal.wsm.samsung.so
