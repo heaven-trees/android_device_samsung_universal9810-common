@@ -93,7 +93,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <vendor-ndk>
-        <version>29</version>
-    </vendor-ndk>
 </compatibility-matrix>
