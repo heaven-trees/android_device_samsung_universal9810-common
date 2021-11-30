@@ -94,7 +94,7 @@ BOARD_ROOT_EXTRA_FOLDERS := efs
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/recovery.fstab
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
