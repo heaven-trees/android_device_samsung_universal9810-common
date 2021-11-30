@@ -1,0 +1,5 @@
+libFacialStickerEngine.arcsoft.so
+libMcClient.so
+libOpenCL.so
+libsmart_cropping.camera.samsung.so
+libswldc_capture_core.camera.samsung.so
