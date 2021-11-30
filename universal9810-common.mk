@@ -108,19 +108,10 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio@5.0-impl:32 \
-    android.hardware.audio.effect@5.0-impl:32 \
-    android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.bluetooth.audio@2.1-impl:32 \
-    android.hardware.bluetooth.audio@1.0-impl:32 \
     android.hardware.soundtrigger@2.3 \
     android.hardware.soundtrigger@2.3-impl \
-    android.hardware.soundtrigger@2.3-impl:32 \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.0-impl:32 \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.r_submix.default \
@@ -150,9 +141,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.0-impl:64 \
+    android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
-    libbt-vendor:64 \
+    libbt-vendor \
     audio.a2dp.default
 
 # Camera
@@ -167,14 +158,27 @@ PRODUCT_PACKAGES += \
     camera.exynos5 \
     Snap
 
-# Display
+# Graphics
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl:64 \
+    android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.2-service \
     android.hardware.graphics.mapper@2.0-impl \
     libstdc++.so \
     libgui_vendor
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
+
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor \
+    libunwindstack.vendor
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -196,25 +200,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
-
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl:64 \
-    android.hardware.health@2.0-service
-
-# HIDL
-PRODUCT_PACKAGES += \
-    libion \
-    libsecion \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor \
-    libunwindstack.vendor
 
 # init
 PRODUCT_COPY_FILES += \
@@ -311,7 +298,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service.samsung \
     android.hardware.keymaster@3.0 \
     android.hardware.keymaster@3.0-service \
-    android.hardware.keymaster@3.0-impl:64
+    android.hardware.keymaster@3.0-impl
 
 # Bridge
 PRODUCT_PACKAGES += \
